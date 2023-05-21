@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.hora{
+    background-image: linear-gradient(to bottom, transparentize(v.$negro, 1%) 0%, transparentize(v.$negro, .3%) 100% ), url(../img/bg_horas.jpg);
+    background-position: center center;
+    background-size: cover;
+    //todo da scroll menos el background
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    text-align: center;
+
+    &__heading{
+        @include m.heading;
+        color: v.$blanco;
+        font-size: 6rem;
+    }
+
+    &__texto{
+        color: v.$blanco;
+        max-width: 60rem;
+        margin: 0 auto;
+        line-height: 2;
+    }
+
+    &__enlace{
+        @include m.boton(v.$primario, v.$blanco);
+    }
+}

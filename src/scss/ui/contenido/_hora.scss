@@ -9,8 +9,9 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 5rem 0;
+    margin-bottom: 4rem;
     text-align: center;
-
+  
     &__heading{
         @include m.heading;
         color: v.$blanco;
@@ -25,6 +26,6 @@
     }
 
     &__enlace{
-        @include m.boton(v.$primario, v.$blanco);
+        @include m.boton(v.$secundario, v.$blanco);
     }
 }

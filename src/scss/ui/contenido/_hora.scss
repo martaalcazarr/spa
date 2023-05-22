@@ -26,6 +26,6 @@
     }
 
     &__enlace{
-        @include m.boton(v.$primario, v.$blanco);
+        @include m.boton(v.$secundario, v.$blanco);
     }
 }
